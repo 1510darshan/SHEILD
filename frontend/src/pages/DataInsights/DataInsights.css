@@ -1,4 +1,5 @@
 .data-insights-page {
+    margin-top: 45px;
     padding: var(--sp-8) 0 var(--sp-16);
     background: var(--color-bg);
 }
