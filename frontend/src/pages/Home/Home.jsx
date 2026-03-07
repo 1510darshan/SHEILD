@@ -558,15 +558,14 @@ export default function Home() {
             We're rewriting the narrative — where every girl is celebrated at birth, every woman leads with full power, and equality isn't an aspiration but a lived reality.
           </p>
 
-          <div style={{
+
+          <button className="btn-solid" style={{
             display: "flex", gap: 16, alignItems: "center",
             opacity: heroLoaded ? 1 : 0,
             transform: heroLoaded ? "translateY(0)" : "translateY(28px)",
             transition: "opacity 0.9s 0.8s, transform 0.9s 0.8s cubic-bezier(0.16,1,0.3,1)",
-          }}>
-            <button className="btn-solid">Begin The Change</button>
-            <button className="btn-outline">Watch Stories</button>
-          </div>
+          }}>Begin The Change</button>
+
 
           {/* Scroll indicator */}
           <div style={{
@@ -768,7 +767,7 @@ export default function Home() {
               gap: "12px",
 
               background: "black",
-              color:"white",
+              color: "white",
               bordercolor: "rgba(154,127,51,0.927)",
               boxshadow: "0 6px 20px rgba(184,146,46,0.2)",
 
@@ -1043,8 +1042,12 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap" }}>
-            <button className="btn-gold">Start Your Journey</button>
-            <button className="btn-ghost-light">Learn More</button>
+            <button
+              className="btn-gold"
+              onClick={() => navigate("/helpbox")}
+            >
+              Request Help
+            </button>
           </div>
         </div>
       </section>
