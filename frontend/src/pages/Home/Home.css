@@ -362,6 +362,29 @@
     animation-delay: 0.4s;
 }
 
+/*--------------------future button----------------------*/
+.future-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(201,168,76,0.08);
+  border-color: rgba(201,168,76,0.4);
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(107, 104, 104, 0.351);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f1923;
+  transition: all 0.3s ease;
+}
+
+.future-btn:hover {
+  background: rgba(201,168,76,0.12);
+  border-color: rgba(154,127,51,0.927);
+  box-shadow: 0 6px 20px rgba(184,146,46,0.2);
+}
+
 @keyframes barUp {
     from {
         transform: scaleY(0);
@@ -444,3 +467,7 @@
         font-size: 2rem;
     }
 }
+
+
+
+

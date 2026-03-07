@@ -15,6 +15,7 @@ import RegionAnalysis from './pages/RegionAnalysis/RegionAnalysis';
 import Interventions from './pages/Interventions/Interventions';
 import Awareness from './pages/Awareness/Awareness';
 import DataSources from './pages/DataSources/DataSources';
+import FuturePlanner from './pages/FuturePlanner';
 
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/awareness" element={<Awareness />} />
+              <Route path="/future-planner" element={<FuturePlanner />} />
 
               {/* Protected Routes - Any authenticated user */}
               <Route
