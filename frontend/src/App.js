@@ -16,11 +16,13 @@ import Interventions from './pages/Interventions/Interventions';
 import Awareness from './pages/Awareness/Awareness';
 import DataSources from './pages/DataSources/DataSources';
 import FuturePlanner from './pages/FuturePlanner';
+import HelpBox from "./pages/HelpBox";
 
 import './App.css';
 
 function App() {
   return (
+    
     <AuthProvider>
       <Router>
         <div className="app">
@@ -32,6 +34,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/awareness" element={<Awareness />} />
               <Route path="/future-planner" element={<FuturePlanner />} />
+              <Route path="/helpbox" element={<HelpBox />} />
 
               {/* Protected Routes - Any authenticated user */}
               <Route
