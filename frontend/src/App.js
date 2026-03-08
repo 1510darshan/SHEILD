@@ -12,7 +12,6 @@ import Login from './pages/Auth/Login';
 import RiskMap from './pages/RiskMap/RiskMap';
 import DataInsights from './pages/DataInsights/DataInsights';
 import RegionAnalysis from './pages/RegionAnalysis/RegionAnalysis';
-import Interventions from './pages/Interventions/Interventions';
 import Awareness from './pages/Awareness/Awareness';
 import DataSources from './pages/DataSources/DataSources';
 import FuturePlanner from './pages/FuturePlanner';
@@ -78,7 +77,6 @@ function App() {
                 path="/interventions"
                 element={
                   <ProtectedRoute allowedRoles={['gov_admin', 'ngo_user']}>
-                    <Interventions />
                   </ProtectedRoute>
                 }
               />

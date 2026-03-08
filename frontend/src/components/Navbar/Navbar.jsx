@@ -127,7 +127,6 @@ const NAV_LINKS = [
   { path: "/", label: "Home" },
   { path: "/risk-map", label: "Risk Map" },
   { path: "/data-insights", label: "Data Insights" },
-  { path: "/interventions", label: "Interventions" },
   { path: "/awareness", label: "Awareness" },
   { path: "/data-sources", label: "Data Sources" },
   { path: "/leaderboard", label: "Leaderboard" },

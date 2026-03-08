@@ -1060,7 +1060,7 @@ export default function Home() {
         background: "#f8f7f4", flexWrap: "wrap", gap: 16,
       }}>
         <div className="sans" style={{ fontSize: 11, color: "rgba(15,25,35,0.3)", fontWeight: 300 }}>
-          © 2025 EqualRise. All rights reserved.
+          © 2025 SHIELD. All rights reserved.
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           {[0.3, 0.6, 0.9].map((o, i) => (
