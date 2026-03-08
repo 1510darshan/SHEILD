@@ -324,6 +324,7 @@ confidentiality as per applicable law.
         display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
         fontFamily: "'Segoe UI', system-ui, sans-serif", gap: "16px",
+        marginTop: "150px"
       }}>
         <p style={{ margin: 0, color: "#6b7280", fontSize: "13px", fontWeight: "500", letterSpacing: "0.3px" }}>
           Bridging the Gender Gap Initiative
