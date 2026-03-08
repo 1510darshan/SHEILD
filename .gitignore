@@ -4,3 +4,5 @@ backend/node_modules/
 .env
 dist/
 build/
+*.json
+frontend/src/Firebase/key.json
