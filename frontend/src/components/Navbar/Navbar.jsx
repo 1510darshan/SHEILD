@@ -130,7 +130,6 @@ const NAV_LINKS = [
   { path: "/interventions", label: "Interventions" },
   { path: "/awareness", label: "Awareness" },
   { path: "/data-sources", label: "Data Sources" },
-  { path: "/leaderboard", label: "Leaderboard" },
 ];
 
 function Navbar() {
