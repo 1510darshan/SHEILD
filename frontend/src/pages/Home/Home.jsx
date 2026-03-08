@@ -559,12 +559,14 @@ export default function Home() {
           </p>
 
 
-          <button className="btn-solid" style={{
-            display: "flex", gap: 16, alignItems: "center",
-            opacity: heroLoaded ? 1 : 0,
-            transform: heroLoaded ? "translateY(0)" : "translateY(28px)",
-            transition: "opacity 0.9s 0.8s, transform 0.9s 0.8s cubic-bezier(0.16,1,0.3,1)",
-          }}>Begin The Change</button>
+          <button className="btn-solid" 
+            onClick={() => navigate("/NGO")}
+            style={{
+              display: "flex", gap: 16, alignItems: "center",
+              opacity: heroLoaded ? 1 : 0,
+              transform: heroLoaded ? "translateY(0)" : "translateY(28px)",
+              transition: "opacity 0.9s 0.8s, transform 0.9s 0.8s cubic-bezier(0.16,1,0.3,1)",
+            }}>Begin The Change</button>
 
 
           {/* Scroll indicator */}
