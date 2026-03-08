@@ -320,8 +320,8 @@ shield/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gender-equity-platform.git
-cd gender-equity-platform
+git clone https://github.com/1510darshan/SHEILD.git
+cd SHEILD
 
 # Install root dependencies
 npm install
@@ -661,11 +661,6 @@ Contributions and usage for social impact are encouraged!
 
 ## Contact & Support
 
-### Communications
-- **Email**: support@geipshield.org
-- **Issues**: [GitHub Issues](https://github.com/yourusername/gender-equity-platform/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/gender-equity-platform/discussions)
-
 ### Social Responsibility
 This platform is built to support the **United Nations Sustainable Development Goal 5: Gender Equality**.
 
@@ -680,9 +675,9 @@ If you use this platform in research or publications, please cite:
 ```bibtex
 @software{GEIP2026,
   title={Gender Equity Intelligence Platform (GEIP) - Shield},
-  author={Your Team Name},
+  author={Team 404},
   year={2026},
-  url={https://github.com/yourusername/gender-equity-platform}
+  url={https://github.com/1510darshan/SHEILD.git}
 }
 ```
 
@@ -694,6 +689,6 @@ If you use this platform in research or publications, please cite:
 
 ⭐ Star us on GitHub if you believe in gender equality!
 
-[Back to Top](#gender-equity-intelligence-platform-geip---shield)
+[Back to Top](https://github.com/1510darshan/SHEILD.git)
 
 </div>
