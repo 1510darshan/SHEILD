@@ -1,5 +1,15 @@
 {
+  "name": "sheild",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm start --prefix server",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
   "dependencies": {
     "firebase": "^12.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
