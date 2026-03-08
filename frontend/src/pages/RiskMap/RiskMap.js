@@ -2,13 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from 'react-leaflet';
 import { useNavigate } from 'react-router-dom';
 import 'leaflet/dist/leaflet.css';
-// import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import app from "../../firebase";
 import { stateList, riskLevels, indicatorTypes, getRiskColor, getRiskBg } from '../../data/regions'; // keep helpers only
 import { Card, FilterPanel, RiskBadge, PageHeader } from '../../components/ui/Components';
 import './RiskMap.css';
 
-// const db = getFirestore(app);
+const db = getFirestore(app);
 
 function RecenterMap({ lat, lng, zoom }) {
     const map = useMap();
@@ -24,21 +24,21 @@ function RiskMap() {
     const [filters, setFilters] = useState({ state: '', risk: '', indicator: 'sex_ratio' });
     const [selectedRegion, setSelectedRegion] = useState(null);
 
-    // // ── Fetch from Firestore ──────────────────────────────
-    // useEffect(() => {
-    //     async function fetchRegions() {
-    //         try {
-    //             const snapshot = await getDocs(collection(db, "districts"));
-    //             const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-    //             setRegionsData(data);
-    //         } catch (err) {
-    //             setError(err.message);
-    //         } finally {
-    //             setLoading(false);
-    //         }
-    //     }
-    //     fetchRegions();
-    // }, []);
+    // ── Fetch from Firestore ──────────────────────────────
+    useEffect(() => {
+        async function fetchRegions() {
+            try {
+                const snapshot = await getDocs(collection(db, "districts"));
+                const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+                setRegionsData(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        }
+        fetchRegions();
+    }, []);
 
     // ── Dynamically build state list from fetched data ────
     const dynamicStateList = useMemo(() => {
@@ -93,10 +93,10 @@ function RiskMap() {
             <div className="map-layout">
                 <div className="map-wrapper">
                     <MapContainer center={[22.5937, 78.9629]} zoom={5} className="leaflet-container" scrollWheelZoom={false}>
-                        {/* <TileLayer
+                        <TileLayer
                             attribution='&copy; <a href="https://carto.com/">CartoDB</a>'
                             url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-                        /> */}
+                        />
                         {selectedRegion && <RecenterMap lat={selectedRegion.lat} lng={selectedRegion.lng} zoom={8} />}
 
                         {filteredRegions.map(region => {
