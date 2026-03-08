@@ -22,6 +22,7 @@ import './App.css';
 
 function App() {
   return (
+    
     <AuthProvider>
       <Router>
         <div className="app">
