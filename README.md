@@ -694,6 +694,6 @@ If you use this platform in research or publications, please cite:
 
 ⭐ Star us on GitHub if you believe in gender equality!
 
-[Back to Top](#gender-equity-intelligence-platform-geip---shield)
+[Back to Top](https://github.com/1510darshan/SHEILD.git)
 
 </div>
