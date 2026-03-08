@@ -17,6 +17,7 @@ import DataSources from './pages/DataSources/DataSources';
 import FuturePlanner from './pages/FuturePlanner';
 import HelpBox from "./pages/HelpBox";
 
+
 import './App.css';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <Route path="/awareness" element={<Awareness />} />
               <Route path="/future-planner" element={<FuturePlanner />} />
               <Route path="/helpbox" element={<HelpBox />} />
+
 
               {/* Protected Routes - Any authenticated user */}
               <Route
