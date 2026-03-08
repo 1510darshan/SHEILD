@@ -2,9 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
+import SakhiAssistant from "./SakhiAssistant";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import ChatBot from './pages/ChatBot/ChatBot.jsx';
+
+import ChatBot from "./components/ChatBot/ChatBot";
+
 
 // Pages
 import Home from './pages/Home/Home';
@@ -89,12 +92,17 @@ function App() {
               {/* Catch all */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-
+            <div style={{ minHeight: "100vh", background: "#080010", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  {/* Floating widget — remove `inline` for floating FAB button */}
+                  <div style={{ width: "420px", height: "640px" }}>
+                    <SakhiAssistant inline />
+                  </div>
+                </div>
           </main>
           <Footer />
         </div>
       </Router>
-      <ChatBot />
+      <ChatBot/>
     </AuthProvider>
   );
 }
