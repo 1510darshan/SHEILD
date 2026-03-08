@@ -16,7 +16,7 @@ import Interventions from './pages/Interventions/Interventions';
 import Awareness from './pages/Awareness/Awareness';
 import DataSources from './pages/DataSources/DataSources';
 import FuturePlanner from './pages/FuturePlanner';
-import HelpBox from "./pages/HelpBox";
+import Leaderboard from './pages/leaderboard/india-district-dashboard (2)';
 
 import './App.css';
 
@@ -34,7 +34,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/awareness" element={<Awareness />} />
               <Route path="/future-planner" element={<FuturePlanner />} />
-              <Route path="/helpbox" element={<HelpBox />} />
+              <Route path="/leaderboard" element={<Leaderboard />} />
 
               {/* Protected Routes - Any authenticated user */}
               <Route
