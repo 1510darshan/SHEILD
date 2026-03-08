@@ -320,8 +320,8 @@ shield/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gender-equity-platform.git
-cd gender-equity-platform
+git clone https://github.com/1510darshan/SHEILD.git
+cd SHEILD
 
 # Install root dependencies
 npm install
