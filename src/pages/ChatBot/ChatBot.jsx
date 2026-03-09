@@ -10,7 +10,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3000";
+const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3001";
 
 /* ═══════════════════════════════════════════════════════════════
    GEMINI API CALL
@@ -171,7 +171,7 @@ function useTTS() {
 
     const u = new SpeechSynthesisUtterance(sentence);
     u.lang   = targetLang;
-    u.rate   = 3;
+    u.rate   = 1.5;
     u.pitch  = 1.05;
     u.volume = 1;
     if (voice) u.voice = voice;

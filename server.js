@@ -77,5 +77,5 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.ServerPORT || 3001;
 app.listen(PORT, () => console.log(`✦ Sakhi server running on http://localhost:${PORT}`));
