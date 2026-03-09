@@ -58,6 +58,11 @@ TONE RULES:
 - Use simple, accessible language — avoid jargon
 - Keep responses SHORT and impactful (2-4 sentences usually)`;
 
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend/build/index.html"));
+});
+
 // ─── Chat endpoint ─────────────────────────────────────────────────────────────
 app.post("/api/chat", async (req, res) => {
   const { message, history = [] } = req.body;
