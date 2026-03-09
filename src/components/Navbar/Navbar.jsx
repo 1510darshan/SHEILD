@@ -46,7 +46,7 @@ function Navbar() {
   const handleLogout = () => {
     logout();
     setDropdownOpen(false);
-    navigate("/login");
+    navigate("/");
   };
 
   return (
