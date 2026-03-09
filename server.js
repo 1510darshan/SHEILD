@@ -59,9 +59,6 @@ TONE RULES:
 - Keep responses SHORT and impactful (2-4 sentences usually)`;
 
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
-});
 
 // ─── Chat endpoint ─────────────────────────────────────────────────────────────
 app.post("/api/chat", async (req, res) => {
@@ -91,6 +88,13 @@ app.post("/api/chat", async (req, res) => {
     res.status(500).json({ error: "Failed to get response. Please try again." });
   }
 });
+
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/build/index.html"));
+});
+
+
 
 const PORT = process.env.ServerPORT || 3001;
 app.listen(PORT, () => console.log(`✦ Sakhi server running on http://localhost:${PORT}`));

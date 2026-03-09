@@ -10,21 +10,22 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
+
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3001";
 
 /* ═══════════════════════════════════════════════════════════════
    GEMINI API CALL
 ═══════════════════════════════════════════════════════════════ */
-async function callGemini(message, history) {
-  const res = await fetch(`${API_BASE}/api/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message, history }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || "Failed to get response");
-  return data.reply;
-}
+// async function callGemini(message, history) {
+//   const res = await fetch(`${API_BASE}/api/chat`, {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({ message, history }),
+//   });
+//   const data = await res.json();
+//   if (!res.ok) throw new Error(data.error || "Failed to get response");
+//   return data.reply;
+// }
 
 /* ═══════════════════════════════════════════════════════════════
    SPEECH RECOGNITION HOOK
