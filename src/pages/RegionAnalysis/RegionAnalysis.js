@@ -215,11 +215,6 @@ function RegionAnalysis() {
                                 </div>
                             </div>
 
-                            <div className="mt-6">
-                                <Link to="/interventions" className="btn btn-primary w-100">
-                                    View Recommended Interventions
-                                </Link>
-                            </div>
                         </Card>
                     </div>
                 </div>
