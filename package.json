@@ -2,6 +2,7 @@
   "name": "sheild",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@google/genai": "^1.44.0",
     "@testing-library/dom": "^10.4.1",
@@ -24,11 +25,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "frontend": "npm start",
+    "frontend": "react-scripts start",
     "backend": "node server.js",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
