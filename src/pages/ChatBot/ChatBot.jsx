@@ -11,7 +11,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3001";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 /* ═══════════════════════════════════════════════════════════════
    GEMINI API CALL
